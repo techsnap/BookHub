@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DashboardFragment">
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/profile_fragment"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/txtProfile"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email ID"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/etName"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/etEmail"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="phone"/>
+
+</RelativeLayout>
